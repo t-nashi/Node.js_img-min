@@ -1,5 +1,5 @@
 # Node.js_img-min
-gulp-imageminのサンプル
+gulp-imagemin、pngquant、mozjpegを使って画像最適化をローカルで行う
 
 ## このサンプル制作時の環境
 * Windows10 Pro、64bit、32GB
