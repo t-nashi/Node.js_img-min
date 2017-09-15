@@ -8,6 +8,7 @@ var mozjpeg  = require("imagemin-mozjpeg");
 gulp.task('imagemin', function(){
     gulp.src("./src/images/*.jpg")
         .pipe(imagemin(
+            // [imagemin.jpegtran({quality:85, progressive: true})] // mozjpegはmacでエラーが発生するためjpegtranを利用する（少し圧縮率が低い）
             [mozjpeg({quality:85, progressive: true})]
         ))
         .pipe(gulp.dest("./public/images"));
